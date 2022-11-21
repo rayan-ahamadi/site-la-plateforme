@@ -1,0 +1,334 @@
+/*Header*/
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+
+.menu {
+    display: flex;
+    background: white;
+    border-bottom: 2px solid rgba(53,167,217,255);
+    width: 100%;
+    height : 70px;
+    line-height: 70px;
+    margin-bottom: 0px;
+    flex: 1 0 auto;
+}
+
+
+.logo {
+    margin: 0; padding:0; 
+    width:100%; 
+    height:50px;
+    margin-top: 9px;
+}
+
+.n-gauche {
+    float : left; 
+}
+
+.n-droite {
+    position: relative;
+    float : right; 
+    font-family: 'Sono';
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size:x-small;
+    right: 5px;
+    top:5px;
+}
+
+.inner {
+    width:100%;
+    margin:auto;
+    margin-top: 5px;
+}
+
+.m-lien {
+    position: sticky;
+    text-decoration: none;
+    color: rgba(53,167,217,255);
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    margin-left: 15px;
+    margin-right: 15px;
+    top:15px;
+    height: 50px;
+    float:left;
+    padding-bottom:0;
+    
+}
+
+.m-lien a {
+    color:rgba(53,167,217,255);
+}
+
+.m-lien:hover {
+    border-color: rgba(53,167,217,255);
+    
+}
+
+
+.m-nav-toggle{
+
+    width: 40px; 
+    height: 70px; 
+    display: none; 
+    cursor: pointer;
+    align-items:center; 
+    
+}
+
+span.toggle-icon, span.toggle-icon:before, span.toggle-icon:after{
+    content: ""; 
+    display: block;
+    width:100%;
+    height:2px; 
+    position: relative; 
+    background: rgba(53,167,217,255);
+}
+span.toggle-icon:before{top: 10px;}
+span.toggle-icon:after{top: -14px;}
+
+.items-sous-liste{
+    position:relative;
+    top: -29px;
+    
+    /*list-style-type: none;*/
+    text-align: center; 
+    padding:0 10px; 
+    background: rgb(106, 106, 108);
+    border-color: rgba(53,167,217,255);
+    border-width: 2px;
+    border-style: solid;
+    display: block;
+}
+
+.items-sous-liste p{
+    color:rgba(53,167,217,255);
+}
+
+.items-sous-liste:hover {
+    background: rgba(171, 183, 245, 0.276);
+    color: gray;
+    /*transition: all 0.5s ease;*/
+}
+
+
+.m-lien:hover .sous-liste {
+    position: absolute;
+    width: 300px;
+    display: block;
+    right:5px;
+    top:81px;
+    z-index: 1000;
+
+}
+
+.sous-liste{
+    position: absolute;
+    width: 300px;
+    display: none;
+    
+}
+
+
+/* body */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sono&display=swap');
+html, body {
+    margin: 0;padding: 0;
+    font-family: Roboto;
+
+}
+
+@media only screen and (max-width: 1000px){
+    .n-droite{
+        display: none;
+    }
+
+    .m-nav-toggle {
+        display: flex;
+        float:right;
+        margin-right: 10px;
+
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+
+/*footer et sous-footer*/
+.new_footer {
+    /*position: absolute;*/
+    width:100%;
+    background-color: rgba(42,96,158,255);
+    border-color: black;
+    border-width: 1px;
+    border-style:solid;
+    display: flex;
+    top:58%;
+    bottom: 0px;
+    height: 290px;
+    text-align: center;
+    font-family: Sono;
+    color: black;
+    justify-content: space-around;
+    
+}
+
+.new_footer p{
+    color: black;
+}
+
+.new_footer div{
+    text-align: center;
+    font-size: x-small;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.rs{
+    display:flex;
+    position: relative;
+    height : 32px;
+    bottom: 0px;
+    margin-bottom: 50px;
+    margin-top:20px;
+    padding: auto;
+}
+
+.logo_rs {
+    margin-top: 30px;
+}
+
+.april {
+
+    margin-bottom: 80px;
+    margin-top: 15px;
+    bottom:0px;
+}
+
+.information_april_logo button {
+            display: inline-block;
+            background-color: #7b38d8;
+            border-radius: 10px;
+            border: 4px double #cccccc;
+            height: 5px;
+            color: #eeeeee;
+            text-align: center;
+            font-size: small;
+            font-family: Sono;
+            padding: 20px;
+            width: 100px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+      
+}
+
+.sub_footer {
+   /* position: absolute;*/
+    bottom :0%;
+    top:100%;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.sub_footer p {
+    position: relative;
+    color:aliceblue;
+    float: left;
+}
+
+.sub_footer .micrologo {
+    display:flexbox;
+    float: right;
+}
+
+/* contenu des pages*/
+
+.contenu {
+    position: static;
+    flex: 1 0 auto;
+    z-index: -1;
+    /*le contenu prend tout sens espace*/
+}
+
+
+/*contenu de page en construction*/
+
+.contenu #construction-page img{
+    position:relative;
+    float:right;
+    right:0px;
+    
+}
+
+/*contenu de la page d'accueuil*/
+
+main{
+display: flex;
+flex-direction: column;
+}
+
+.accu_inscri {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: rgba(53,167,217,255);
+    height: 700px;
+    margin-top: -16px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.text_inscri p {
+    text-align: left;
+}
+
+.image_plateformeurs img{
+    position: relative;
+    /*float : right;*/
+    height: 700px;
+
+}
+
+.accu_cursus {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 700px;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.accu_formation {
+    display: flex;
+    border: 2px solid rgba(53,167,217,255);
+    font-size: x-small;
+    height: 300px;
+    align-content: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+.accu_formation p {
+    justify-content: center;
+    
+}
+
+
+
+
